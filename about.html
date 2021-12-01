@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./footer.css">
+    <title>IT American Solutions INC</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><a href="index.html"><img src="./logo.png" width="100px" height="100px"></a></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
+
+    <img src="./about-us.jpeg" class="topimg">
+
+
+    <article class="flex-coloumn">
+        <div class="row">
+            <div class="column">
+                <div class="column-1">
+                    <img src="./abt.jpeg">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-2 bg-light">
+                    <h2>ABOUT US</h2>
+                    <br>
+                        <i class="fas fa-uds"></i><strong class="meta">Profile</strong>
+                    <p class="para">Strategic Staffing IT Inc is one of the leading global consulting and IT<br>
+                         service providers in Application development, consulting and staffing<br>
+                        Services. We excel in providing innovative business software solutions and <br>
+                        complete Information Technology Services to make our clients business <br>
+                        effective & efficient, there by providing the greatest return on investment.<br>
+                        Our area of expertise includes Application Development, Enterprise<br>
+                        resource planning, Data-Warehousing, Technology Staffing Solution,<br>
+                        Customer Relationship Management, Supply Chain Solutions, Web<br>
+                        Services and Portals.</p>
+                    <a href="post3.html" class="btn btn-dark">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+<footer>
+    <h1 class="white">Refer A Freind</h1>
+    <h3 class="white">Do you know someone who would be interested in joining the Strategic Staffing IT Inc Community?</h3>
+    <p>Send us the names of qualified applicants and both of you can win. They will have the opportunity to join some of the most influential<br><br><span>
+        IT professionals while exploring new career opportunities and you can bonus incentives.</span></p>
+    <h2 class="white">Call Us @ <a href="tel:" class="white">Number</a></h2></a>
+    <h2 class="white">Email: <a href="mailto:" class="white">Email</a></a></h2>
+    <p>Contact Us: Address: 28345 Beck Rd, Suite # 105, Wixom, MI - 48393</p>
+    <p>©2021 IT American Solutions INC | All Rights Reserved</p>
+</footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+  
+    function toggleMenu() {
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>  
