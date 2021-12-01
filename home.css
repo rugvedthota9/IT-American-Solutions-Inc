@@ -172,9 +172,10 @@ section {
     background: #3f3752;
 }
 
-.container {
+.containerof {
     position: relative;
     width: 1200px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +183,7 @@ section {
     flex-wrap: wrap;
 }
 
-.container .serviceBox {
+.containerof .serviceBox {
     position: relative;
     width: 350px;
     height: 280px;
@@ -191,7 +192,8 @@ section {
     overflow: hidden;
 }
 
-.container .serviceBox .icon {
+
+.containerof .serviceBox .icon {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,22 +206,23 @@ section {
     align-items: center;
     z-index: 2;
 }
-.container .serviceBox:hover .icon {
+
+.containerof .serviceBox:hover .icon {
     top: 30px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-.container .serviceBox .icon ion-icon {
+.containerof .serviceBox .icon ion-icon {
     font-size: 5em;
     color: #fff;
     transition: 0.5s;
 }
-.container .serviceBox:hover .icon ion-icon {
+.containerof .serviceBox:hover .icon ion-icon {
     font-size: 2em;
 }
-.container .serviceBox .content {
+.containerof .serviceBox .content {
     position: relative;
     padding: 20px;
     color: #fff;
@@ -227,14 +230,68 @@ section {
     margin-top: 100px;
     z-index: 1;
 }
-.container .serviceBox .content h2 {
+.containerof .serviceBox .content h2 {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-.container .serviceBox .content p {
+.containerof .serviceBox .content p {
     opacity: 65%;
     line-height: 1.5em;
 }
 .toptext {
     color: #fff;
+}
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 400px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .social_icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+footer .social_icon li ,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
 }
