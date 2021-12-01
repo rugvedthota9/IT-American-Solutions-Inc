@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="./home.css">
+    <title>IT American Solutions INC</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><a href="index.html"><img src="./logo.png" width="100px" height="100px"></a></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </header>
+
+    
+
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./banner1.png" width="100%">
+
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./banner2.png" width="100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./banner3.png" width="100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <div class="container">
+        <div class="text">
+            <h1><span>WE ARE A TECHNOLOGY STAFFING</span><span>AND SOLUTIONS FIRM</span></h1>
+            <br>
+            <br>
+            <p class="right">Strategic Staffing IT Inc is one of the leading global consulting and IT Staffing providers. We excel in providing innovative business software solutions and complete
+                <br><br><span>Information Technology Staffing Services to make our clients business effective & efficient, there by providing the greatest return on investment. Our area of expert</span><br>
+                <span>Staffing solutions include Enterprise resource planning, Data-Warehousing, Web Services and Portals.</span><br><br>
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="./technology.png" class="bottom-left">
+        <div class="sidetext">
+          <p>At Strategic Staffing IT Inc, we are a Tier 1 technology staffing and solutions<br><br>
+          <span>firm offering on-demand access to exceptional talent. We supply consultants</span><br>
+          <span>to many of the world's largest IT organizations for projects ranging from ERP</span><br>
+          <span>and CRM to e-commerce, security and other network and enterprise applica-</span><br>
+          tion initiatives.</p></div>
+    </div>
+
+    <div class="container">
+      <div class="rectangle">
+        <h1 class="white">Why Choose Us</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <img src="./choose-1.png" class="left">
+      </div>
+      <div class="text">
+        <h2>Staff Augmentation</h2>
+        <h4>Exceptional Talent. Progressive Solutions.</h4>
+        <p><br>At Strategic Staffing IT Inc, we've worked with some of the world's largest corporations to fulfill strategic IT initiatives and provide <br>
+          innovative staff augmentation solutions.
+        </p>
+        <a href="about.html">More Info -></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <img src="./choose-2.png" class="left">
+      </div>
+      <div class="text">
+        <h2>IT Services</h2>
+        <h4>Complete Project Outsourcing</h4>
+        <p><br>In additional to supplying qualified IT consultants for in house projects, Strategic Staffing IT Inc has the ability to fully manage a<br>variety of outsourced IT initiatives.
+        </p>
+        <a href="about.html">More Info -></a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <img src="./choose-3.png" class="left">
+      </div>
+      <div class="text">
+        <h2>Career Advancement</h2>
+        <h4>Interested in new opportunities?</h4>
+        <p><br>When joining Strategic Staffing IT Inc as a consultant, you`re not just signing on for a job, you`re joining a community.
+        </p>
+        <a href="about.html">More Info -></a>
+      </div>
+    </div>
+    
+    <div class="container black">
+      <div class="text">
+        <h1><span>DO YOU HAVE WHAT IT TAKES?</span></h1>
+        <p>If you’re an IT professional searching for a new and rewarding opportunity, call us today. We?re currently looking for talented<br>
+          <span>consultants in the following areas:</span></p>
+      </div>
+    </div>
+
+    <div class="black">
+      <div class="rectangleborder">
+        <h2>Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0);
+  });
+
+  function toggleMenu() {
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+</script>
+</body>
+</html>
