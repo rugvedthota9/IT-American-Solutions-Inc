@@ -92,3 +92,11 @@
 span {
     margin-bottom: 1rem;
 }
+
+li {
+    text-decoration: none;
+}
+.tick {
+    width: 20px;
+    height: 20px;
+}
