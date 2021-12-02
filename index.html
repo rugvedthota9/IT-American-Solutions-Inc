@@ -5,25 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./slider.css">
-    <link rel="stylesheet" href="./home.css">
-    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>IT American Solutions INC</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"><a href="index.html"><img src="./logo.png" width="100px" height="100px"></a></a>
-        <div class="menuToggle" onclick="toggleMenu();"></div>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
+    <header class="hero">
+        <nav id="navbar">
+            <a href="#" class="logo"><a href="index.html"><img src="./logo.png" width="100px" height="100px"></a></a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <ul>
+                    <li>Services <i class="fas fa-angle-down"></i> 
+                        <ul>
+                            <li><a href="./database-solutions.html">Databse Solutions</a></li>
+                            <li><a href="./Enterprise.html">Enterprise Solutions</a></li>
+                            <li><a href="./it-consulting.html">IT Consultings</a></li>
+                        </ul>
+                    </li>
+                    <li>Solutions<i class="fas fa-angle-down"></i>
+                        <ul>
+                            <li><a href="./Buisness.html">Buisness Intelligence (BI)</a></li>
+                            <li><a href="./Enterprise.html">Enterprise Resource Planning (ERP)</a></li>
+                        </ul>
+                    </li>
+                    <li>Client Services<i class="fas fa-angle-down"></i>
+                        <ul>
+                            <li><a href="./overview.html">Overview</a></li>
+                            <li><a href="./processes.html">Services Process</a></li>
+                            <li><a href="./client.html">Client Serviceed</a></li>
+                            <li><a href="./project.html">Project Outsourching</a></li>
+                            <li><a href="./faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                </ul>
+            </ul>
+        </nav>
     </header>
-
-    
-
-
 <div class="slideshow-container">
 
     <div class="mySlides fade">

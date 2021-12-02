@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/footer.css">
     <title>IT American Solutions INC</title>
 </head>
-<body>
     <header class="hero">
         <nav id="navbar">
             <a href="#" class="logo"><a href="index.html"><img src="./logo.png" width="100px" height="100px"></a></a>
@@ -35,7 +34,7 @@
                     <li>Client Services<i class="fas fa-angle-down"></i>
                         <ul>
                             <li><a href="./overview.html">Overview</a></li>
-                            <li><a href="./processes.html">Services Process</a></li>
+                            <li><a href="./services.jpeg">Services Process</a></li>
                             <li><a href="./client.html">Client Serviceed</a></li>
                             <li><a href="./project.html">Project Outsourching</a></li>
                             <li><a href="./faq.html">FAQ</a></li>
@@ -46,42 +45,6 @@
             </ul>
         </nav>
     </header>
-
-    <img src="./about-us.jpeg" class="topimg" width="100%">
-
-    <article class="flex-coloumn">
-        <div class="row">
-            <div class="column">
-                <div class="column-1">
-                    <img src="./abt.jpeg">
-                </div>
-            </div>
-            <div class="column">
-                <div class="column-2 bg-light">
-                    <h2>ABOUT US</h2>
-                    <br>
-                        <i class="fas fa-uds"></i><strong class="meta">Profile</strong>
-                    <p class="para">Strategic Staffing IT Inc is one of the leading global consulting and IT<br>
-                         service providers in Application development, consulting and staffing<br>
-                        Services. We excel in providing innovative business software solutions and <br>
-                        complete Information Technology Services to make our clients business <br>
-                        effective & efficient, there by providing the greatest return on investment.<br>
-                        Our area of expertise includes Application Development, Enterprise<br>
-                        resource planning, Data-Warehousing, Technology Staffing Solution,<br>
-                        Customer Relationship Management, Supply Chain Solutions, Web<br>
-                        Services and Portals.</p>
-                    <h3>Vision</h3>
-                    <ul>
-                        <br>
-                        <li>To become a global leader in IT services by following industry best<br>practices and methodologies to meet expectations of our clients.
-                        </li>
-                        <br>
-                        <li>To provide highest Levels of Performance, we maintain insight into future<br>trends by following the industry changes closely and give the highest<br>level of satisfaction to every client.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </article>
 <footer>
     <h1 class="white">Refer A Freind</h1>
     <h3 class="white">Do you know someone who would be interested in joining the Strategic Staffing IT Inc Community?</h3>
@@ -107,4 +70,4 @@
     }
   </script>
 </body>
-</html>  
+</html>

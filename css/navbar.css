@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100,200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: coral;
+    --secondary-color: chocolate;
+}
+
+header.sticky {
+    position: fixed;
+    background: #fff;
+    padding: 0.0001px 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+.logo {
+    position: fixed;
+    left: 0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.0001px 50px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+
+}
+
+header.logo {
+    margin-left: 10px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+}
+
+header .navigation li a:hover,
+header.sticky .navigation li a:hover {
+    color: #245af0;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+/* Hide nested ul by default */
+
+
+#navbar ul {
+    list-style: none;
+    z-index: 3;
+}
+
+#navbar ul li {
+    color: #333;
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+}
+
+#navbar ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* Hide nested ul by default */
+
+#navbar ul li ul {
+    display: none;
+}
+
+
+
+/* Nested dropdown sho{w */
+
+#navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 1rem;
+}
+
+#navbar ul li:hover ul li {
+    display: block;
+    background: #e7e7e7;
+}
+
+#navbar ul li:hover ul li a {
+    color: #333;
+}
+
+#navbar ul li:hover ul li:hover {
+    background: #e0e0e0;
+    color: inherit;
+}
+
+#navbar ul li:hover ul li span {
+    float: right;
+    color: #fff;
+    background: var(--primary-color);
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+#navbar ul li:hover ul li:hover span {
+    background: var(--secondary-color);
+}
+
+#showcase {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    background-color: var(--primary-color);
+
+}
+
+#showcase h1 {
+    color: #fff;
+    font-size: 4rem;
+}
