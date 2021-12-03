@@ -1,3 +1,4 @@
+
 footer {
     position: relative;
     width: 100%;
@@ -59,4 +60,14 @@ a {
 }
 .white {
     color: #fff;
+}
+
+@media (max-width: 968) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+    body {
+        overflow-x: hidden;
+    }
 }

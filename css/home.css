@@ -233,6 +233,9 @@ article {
     line-height: 1.5em;
 }
 
+.resp {
+    opacity: 0;
+}
 
 @media (max-width: 968px) { 
     .flex-items {
@@ -248,5 +251,41 @@ article {
     }
     .team img {
         width: 70%;
+    }
+    .text h1{
+        font-size: 1em;
+    }
+    p.right {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .flex-coloumn img {
+        margin-left: 70px;
+        margin-top: 14px;
+        width: 252px;
+        height: 252px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .containerof {
+        position: fixed;
+        top: -100;
+        opacity: 0;
+    }
+    .resp {
+        opacity: 1;
+    }
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 250px;
     }
 }
