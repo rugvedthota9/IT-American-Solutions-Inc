@@ -151,3 +151,41 @@ header.sticky .navigation li a {
     color: #fff;
     font-size: 4rem;
 }
+@media (max-width:968px) {
+    #navbar ul li {
+        color: #333;
+        display: inline-block;
+        padding: 1rem;
+        position: relative;
+        cursor: pointer;
+    }
+    /* .menuToggle {
+        position: fixed;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        background: url(../menu.png);
+        filter: invert(1);
+        background-repeat: no-repeat;
+    }
+    .menuToggle.active {
+        background: url(../close.png);
+        background-repeat: no-repeat;
+    } */
+    ul.navigation {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    header.sticky {
+        position: fixed;
+        background: #fff;
+        padding: 0.0001px 40px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+    }    
+}

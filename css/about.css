@@ -100,3 +100,17 @@ li {
     width: 20px;
     height: 20px;
 }
+
+
+    
+
+@media (max-width: 968px) {
+    .flex-coloumn img {
+        margin-left: 70px;
+        margin-top: 14px;
+        width: 252px;
+        height: 252px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}

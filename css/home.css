@@ -232,3 +232,21 @@ article {
     opacity: 65%;
     line-height: 1.5em;
 }
+
+
+@media (max-width: 968px) { 
+    .flex-items {
+        flex-direction: column;
+    }
+    .flex-items {
+        align-items: center;
+        top: 0;
+    }
+    .flex-coloumn .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .team img {
+        width: 70%;
+    }
+}
